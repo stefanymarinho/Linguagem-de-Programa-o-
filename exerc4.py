@@ -1,21 +1,15 @@
-numero1 = float(input("Primeiro número:"))
-numero2 = float(input("Segundo número:"))
-operação = input("Digite a operação a realizar (+,-,* ou /):")
-if operação == "+":
-    resultado = numero1 + numero2
-elif operação == "-":
-    resultado = numero1 - numero2
-elif operação == "*":
-    resultado = numero1 * numero2
-elif operação == "/":
-    resultado = numero1 / numero2
-else:
-    print("Operação inválida!")
-    resultado = 0
-print("Resultado: ", resultado)
+quilometros = float(input("Qual a quantidade de km percorridos:"))
+dias = float(input("Quantos dias você alugou o carro:"))
+
+valortotal = (65 * dias) + (quilometros * 0.25)
+
+
+print("O valor total a ser pago será:" , valortotal)
+
 
 
 #questão:
-#Escreva um programa que leia dois números e que pergunte qual operação você
-# deseja realizar. Você deve poder calcular soma (+), subtração (-),
-# multiplicação (*) e divisão (/). Exiba o resultado da operação solicitada.
+# Escreva um programa que pergunte a quantidade de km percorridos por um carro
+#alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi
+#alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 65 por dia e R$
+#0,25 por km rodado.

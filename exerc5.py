@@ -1,11 +1,14 @@
-i= 10
-while i >= 0:
-     print(i)
-     i = i - 1 #subtrai um numero ao resultado inicial
+cigarrospordia = int(input("Quantidade de cigarros por dia:"))
+anosfumando = float(input("Quantidade de anos fumando:"))
 
-print("Fogo")
+reduçãoemminutos = anosfumando * 365 * cigarrospordia * 12
+
+reduçãoemdias = reduçãoemminutos / (24 * 60)
+
+print("Redução do tempo de vida %8.2f dias." % reduçãoemdias)
 
 #questão:
-#Faça um programa para escrever a contagem regressiva do lançamento de um foguete.
-# O programa deve imprimir 10, 9, 8, …, 1, 0 e Fogo! na tela.
-
+#Escreva um programa para calcular a redução do tempo de vida de um fumante.
+#Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou.
+#Considere que um fumante perde 12 minutos de vida a cada cigarro, e calcule
+#quantos dias de vida um fumante perderá. Exiba o total em dia

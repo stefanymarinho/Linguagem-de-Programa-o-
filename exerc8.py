@@ -1,18 +1,13 @@
-primeirastring = input("Digite a primeira string:")
-segundastring = input("Digite a segunda string:")
-terceirastring = ""
+String = str(input("digite a string:"))
 
-for letra in primeirastring:
-     if letra in segundastring and letra not in terceirastring:
-         terceirastring += letra
+i = {}
 
-if terceirastring == "":
-    print("caracteres comuns não encontrados.")
-else:
-    print(f"caracteres em comum: {terceirastring}")
+for letra in  String :
+    i[letra] = i .get(letra,0)+1
 
-    #questão
-   #Escreva um programa que leia duas strings e gere uma terceira com os
-# caracteres comuns às duas strings lidas.
+for chave, valor in i.items():
+    print(f"{chave}: {valor}x")
 
-
+#questão:
+#Escreva um programa que leia uma string e imprima quantas vezes cada caractere
+#aparece nessa string. Exemplo: String: BBWWN Resultado: T: 2x B: 2x W: 1N.

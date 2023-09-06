@@ -1,15 +1,19 @@
-salario = float (input("Digite o salario:"))
-percentual = float (input("Digite a porcentagem do aumento:"))
+materia1 = float(input("digite a nota:"))
+materia2 = float(input("digite a nota:"))
+materia3 = float(input("digite a nota:"))
+materia4 = float(input("digite a nota:"))
+materia5 = float(input("digite a nota:"))
 
-novosalario = salario + ((salario*percentual)/100)
-aumento = novosalario - salario
+if (materia1 >= 7) and (materia2 >= 7) and (materia3 >= 7) and (materia4 >= 7) and (materia5 >= 7):
+    print("O aluno foi aprovado")
 
-print("salario de R$ " , salario)
-print(" Um aumento de  R$  :" , aumento )
-print("Novo salário é de: R$" , novosalario)
+else:
+    print("O aluno não foi aprovado")
+
 
 #questão:
-#Faça um programa que calcule o aumento de um salário.
-# Ele deve solicitar o valor do salário e a porcentagem do aumento.
-# Exiba o valor do aumento e do novo salário.
-
+#Escreva uma expressão que será utilizada para decidir se um aluno foi ou não
+#aprovado. Para ser aprovado, todas as médias do aluno devem ser maiores que 7.
+#Considere que o aluno cursa apenas cinco matérias, e que a nota de cada uma está
+#armazenada nas seguintes variáveis: matéria1, matéria2, matéria3, matéria4 e
+#matéria5.

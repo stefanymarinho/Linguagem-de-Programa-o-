@@ -1,15 +1,18 @@
-numero1 = int(input("dividendo:"))
-numero2 = int(input("divisor:"))
-resultado = 0
-i= numero1
+soma = 0
+quantidade = 0
 
-while i >=numero2:
-    i = i- numero2
-resultado = resultado + 1
-resto = i
-print(f"O resto de {numero1} / {numero2} é {resto}")
+while True:
+    numeros = int(input("digite os números  (0 para terminar)"))
+    if numeros == 0:
+        break
+    soma = soma + numeros
+    quantidade = quantidade + 1
+
+print("Quantidade de numeros digitados:",quantidade)
+print("Soma :",soma)
+print(f"Media: {soma/quantidade:10.2f}")
 
 #questão:
-#Escreva um programa que calcule o resto da divisão inteira entre dois números.
-#  Utilize apenas as operações de soma e subtração para calcular o resultado.
-
+#Escreva um programa que leia números inteiros do teclado. O programa deve ler
+#os números até que o usuário digite 0 (zero). No final da execução, exiba a
+#quantidade de números digitados, assim como a soma e a média aritmética

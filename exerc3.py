@@ -1,11 +1,13 @@
-distancia = float(input("Digite a distancia em Km: "))
-velocidade = float(input("Digite a velocidade media :"))
+mercadoria = float(input("Digite o preço a ser pago pela mercadoria: R$"))
+desconto = float(input("Digite o percentual de desconto (%)"))
 
-tempo =distancia / velocidade
+valordodesconto = (mercadoria * desconto)/ 100
+valorcomdesconto = mercadoria - valordodesconto
 
-print("tempo : " , tempo)
+print("Este é o valor do desconto R$:",valordodesconto)
+print("Este é o valor com desconto R$:",valorcomdesconto)
 
-#questão
-#Escreva um programa que calcule o tempo de uma viagem de carro.
-# Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
 
+#questão:
+#Faça um programa que solicite o preço de uma mercadoria e o percentual de
+#desconto. Exiba o valor do desconto e o preço a pagar.
