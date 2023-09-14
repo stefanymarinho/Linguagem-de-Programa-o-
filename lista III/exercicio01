@@ -1,0 +1,30 @@
+maior = None
+menor = None
+
+while True:
+    try:
+        lista= float(input("Digite um número (ou qualquer letra para parar): "))
+
+        # Se é o primeiro número inserido, define-o como o maior e o menor
+        if maior is None and menor is None:
+            maior = lista
+            menor = lista
+        else:
+            # Verifica se o número é maior que o atual maior valor
+            if lista > maior:
+                maior = lista
+            # Verifica se o número é menor que o atual menor valor
+            elif lista < menor:
+                menor = lista
+    except ValueError:
+        break
+
+if maior is not None and menor is not None:
+    print(f"O maior valor é: {maior}")
+    print(f"O menor valor é: {menor}")
+else:
+    print("Nenhum número foi inserido.")
+
+#questão:
+# Escreva um programa que leia uma lista de números e encontre o maior e o
+#menor valor
